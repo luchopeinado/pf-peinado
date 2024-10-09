@@ -1,0 +1,60 @@
+/*propiedades para desktop*/
+
+@media screen and (min-width:1024px){
+    /*general*/
+    header{
+        div{
+            div{
+                a{
+                    .imagen-logo{
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .main-index{
+            @include grid-column(2,1fr);
+        }
+        .main-escuela{
+            @include grid-column(2,1fr);
+        }
+        .main-efemerides{
+            @include grid-column(2, 1fr);
+        }
+        div{
+            .contactos{
+                @include grid-column(4,1fr);
+                .link-canal{
+                    margin-top: 30px;
+                    grid-column: span 4;
+                }
+            }
+        }
+        .mapa{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            align-items: center;
+            div{
+                iframe{
+                    width: 95%;
+                    
+                }
+            }
+        }
+    }
+    .main-campos{        
+        .div-imagenes-campos{
+            width: 99%;
+            
+            @include grid-column(2,1fr);
+            text-align: center;
+            div{
+                img{
+                    width: 80%;
+                }     
+            }
+        }
+    }
+}

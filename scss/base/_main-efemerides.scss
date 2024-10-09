@@ -1,0 +1,13 @@
+/*propiedades de efemerides.html*/
+
+main{
+    .main-efemerides{
+        .div-calendario{
+            @include contenedor-imagenes (10px,10px);
+            @include flex-column(1rem);
+            .img-calendario{
+                width: 80%;
+            }
+        }
+    }
+}

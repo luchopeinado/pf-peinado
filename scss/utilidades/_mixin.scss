@@ -1,0 +1,41 @@
+@import "../utilidades/variables";
+
+
+@mixin imagen-titulo ($imagen, $index-si){
+    @if $index-si==1 {
+        height: 300px;
+    }
+    background-image: url($imagen);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*margenes para separacion y union*/
+    margin: 20px;
+    margin-top: 0px;
+    
+}
+
+
+@mixin flex-column ($gap){
+    display: flex;
+    flex-direction: column; /*queda uno abajo de otro*/
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin contenedor-imagenes ($padding, $margin){
+    margin: $margin;
+    padding: $padding;
+    background-color: $color-4;
+    text-align: center;
+    border-radius: 1rem;     /*borde redondo*/
+    border: 3px solid $color-2;
+}
+
+@mixin grid-column ($cantidad,$ancho){
+    display: grid;
+    grid-template-columns: repeat($cantidad, $ancho);
+    grid-template-rows: 1fr;
+
+
+}

@@ -1,0 +1,57 @@
+
+//propiedades para tablet
+@media screen and (min-width: 768px){
+    header{
+        div{
+            div{
+                a{
+                    .imagen-logo{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .main-escuela{
+            .contenedor{
+                div{
+                    .detalle-foto{
+                        font-size:large;
+                    }
+                }
+            }
+        }
+        div{
+            .contactos{
+                @include grid-column(2,1fr);
+                .link-canal{
+                    margin-top: 30px;
+                    grid-column: span 2;
+                }
+            }
+        }
+        .mapa{
+            @include grid-column(1,1fr);
+            
+            div{
+                text-align: center;
+                iframe{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .main-campos{
+        .div-imagenes-campos{
+            width: 99%;
+            text-align: center;
+            div{
+                img{
+                    width: 90%;
+                }     
+            }
+        }
+    }
+}

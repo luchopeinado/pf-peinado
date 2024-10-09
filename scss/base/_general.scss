@@ -1,0 +1,44 @@
+/*propiedades para primera foto y nombre de html*/
+main{
+    background-color: $color-4;
+    .div-index{
+        @include imagen-titulo("../img/patiocolegio.png",1);
+    }
+    .div-secundarios{
+        @include imagen-titulo("../img/patiocolegio.png",0);
+    }
+    .main-escuela .main-index{
+        /*le doy la estructura y tamaño deseado a los contenedores*/
+        @include grid-column(3,0.5fr);
+    }
+    div{
+        h1{
+            /*estilo letras letras h1*/
+            color: $color-1;
+            text-shadow: 6px 6px 3px black;
+            margin: 20px;
+            font-weight: 800;
+        }
+        .contenedor{
+            /*propiedades de los div que contienen imagenes en los html index y escuela*/
+            @include contenedor-imagenes(20px,20px);
+            @include flex-column(1rem);
+            .foto-html{
+                width: 90%;
+            }
+            
+            .detalle-foto{
+                /*anotacion para debajo de la foto*/
+                font-size:x-small;
+                margin: 0% 5%;
+                justify-content: center;
+            }
+            h3{
+                margin-top: 15px;
+                span{
+                    display: block;
+                }
+            }
+        }        
+    }
+}

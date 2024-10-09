@@ -1,0 +1,12 @@
+/*propiedades del html campos-formativos*/
+.main-campos{
+    background-image: url("../img/galeria-c-formativos.jpg");
+    background-size:auto;
+    align-items: center;
+    .div-imagenes-campos{
+        width: 500px;
+        margin: 10px;
+        overflow-x:auto;
+        @include flex-column (1rem);
+    }
+}

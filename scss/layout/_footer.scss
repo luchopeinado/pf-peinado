@@ -1,0 +1,20 @@
+/*propiedades del footer*/
+footer{
+    background-color: $color-2;
+    padding: 10px;
+    .icon-whatsapp{ /*propiedades del icono del whatsapp del footer*/
+        img{
+            width: 50px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        } 
+    }
+    .flecha{/*propiedades de la flecha del footer*/
+        text-align: center;
+        img{
+            width: 30px;
+        }
+    }
+
+}

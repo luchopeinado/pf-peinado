@@ -1,0 +1,28 @@
+/*css del contacto.html*/
+
+main{
+    .contactos{
+        text-align: center;    
+        display: grid;
+        grid-template-columns: 1fr;
+        div{
+            margin: 1rem;
+            .img-whatsapp{
+                width: 30px;
+            }
+        }
+    }
+    .mapa{
+        background-color: $color-3;
+        @include flex-column(0rem);
+        div{
+            h5{
+                text-align: center;
+                padding: 20px;
+            }
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+}
