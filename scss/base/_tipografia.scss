@@ -14,4 +14,12 @@ body{
             }
         }
     }
+    /* fuente solo para titulos tablas de campos formativos */
+    .main-campos{
+        .div-tablas-campos{
+            div h3, p{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            }
+        }
+    }
 }

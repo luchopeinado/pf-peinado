@@ -45,16 +45,10 @@
         }
     }
     .main-campos{        
-        .div-imagenes-campos{
+        .div-tablas-campos{
             width: 99%;
-            
             @include grid-column(2,1fr);
-            text-align: center;
-            div{
-                img{
-                    width: 80%;
-                }     
-            }
+
         }
     }
 }

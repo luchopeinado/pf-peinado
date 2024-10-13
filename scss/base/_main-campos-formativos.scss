@@ -3,10 +3,41 @@
     background-image: url("../img/galeria-c-formativos.jpg");
     background-size:auto;
     align-items: center;
-    .div-imagenes-campos{
+    .div-tablas-campos{
         width: 500px;
-        margin: 10px;
         overflow-x:auto;
         @include flex-column (1rem);
+        justify-items: center;
+        text-align: center;
+        div{
+            border: 3px solid $color-2;
+            border-radius: 5px;
+            margin: 5px;
+            align-items: center;
+            p{
+                line-height: 10px;    
+            }
+            h3, p{
+                text-align: center;
+                text-shadow: 1px 1px 2px $color-4, 0 0 1em $color-4, 0 0 0.2em $color-4;
+            }
+            table{
+
+                margin: 5px;
+                border-collapse: collapse;
+                th{
+                    background-color: #7FA1C3;
+                    padding: 5px;
+
+                }
+                tr, td{
+                    padding: 10px;
+                    text-align: center;
+                    width: 150px;
+                    background-color: $color-4;
+                }
+            }
+        }
+        
     }
 }
